@@ -1,19 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import CC from './CC'
-import FC from './FC'
-import PC from './parent'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "./App.css";
+import ParticleBackground from "./ParticleBackground";
 
 function App() {
   return (
-    <div className="App">
-      <h1 style={{color:'red', backgroundColor:'primary'}}>This is State Lecture</h1>
-      <CC/>
+    <div>
+      <ParticleBackground />
+      <CenterTitle />
+      <h1 className="another">hii</h1>
       
-      {/* { <FC/>
-      <PC/>} */}
+    </div>
+  );
+}
+
+function CenterTitle() {
+  return (
+    <div id="text_div center_all">
+      <div className="center_all">
+        <h1 className="custom-subTitle">Welcome to I-Vote</h1>
+      </div>
     </div>
   );
 }
