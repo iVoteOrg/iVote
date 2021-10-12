@@ -1,23 +1,19 @@
-import "./App.css";
-import ParticleBackground from "./ParticleBackground";
+import React from "react";
 
-function App() {
+import Particle from "./Components/particle/Particle"
+import Signin from "./Components/signin/Signin";
+import About from "./Components/About/About";
+import Team from "./Components/teamMember/Team";
+import Contact from "./Components/contact/Contact";
+
+const App = () => {
   return (
     <div>
-      <ParticleBackground />
-      <CenterTitle />
-      <h1 className="another">hii</h1>
-      
-    </div>
-  );
-}
-
-function CenterTitle() {
-  return (
-    <div id="text_div center_all">
-      <div className="center_all">
-        <h1 className="custom-subTitle">Welcome to I-Vote</h1>
-      </div>
+        <Particle/>
+        <Signin/> 
+        <About/>
+        <Team/>
+        <Contact/>
     </div>
   );
 }
