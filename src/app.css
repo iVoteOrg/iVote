@@ -1,3 +1,53 @@
 .dabbe {
 	text-align: center;
 }
+html {
+	position: relative;
+	min-height: 100%;
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 20px;
+	background: rgba(131, 131, 131, 0.397);
+}
+.nav-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-links {
+	height: 0;
+	list-style-type: none;
+}
+.nav-links a {
+	text-decoration: none;
+	color: white;
+	transition: var(--mainTransition);
+	font-size: 1.2rem;
+
+	font-family: var(--main-font);
+	letter-spacing: var(--mainSpacing);
+}
+
+@media screen and (min-width: 768px) {
+	.nav-btn {
+		display: none;
+	}
+	.nav-center {
+		max-width: 1170px;
+		margin: 0 auto;
+		display: flex;
+	}
+	.nav-links {
+		height: auto;
+		display: flex;
+		margin-left: 100%;
+	}
+	.nav-links a {
+		margin: 0 1rem;
+		padding: 0.5rem 0;
+	}
+}

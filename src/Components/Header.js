@@ -12,8 +12,8 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
-        <div >
-          <div >
+        <div>
+          <div>
             <button
               type="button"
               className="nav-btn"
@@ -26,16 +26,16 @@ export default class Navbar extends Component {
               <Link smooth to="#particle">Home</Link>
             </li>
             <li>
-              <Link smooth to="#sign_in">SignIn par jaa</Link>
+              <Link smooth to="#sign_in">SignIn</Link>
             </li>
             <li>
               <Link smooth to="#about">About</Link>
             </li>
             <li>
-              <Link smooth to="#team_par_ja">Team par jaa</Link>
+              <Link smooth to="#team_par_ja">Team</Link>
             </li>
             <li>
-              <Link smooth to="#contact">Contact par jaa</Link>
+              <Link smooth to="#contact">Contact</Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,4 @@
-import React from "react";
-// import React, { Component } from 'react';
+import React, { Component } from 'react';
 
 import Particle from "./Components/Particle"
 import Signin from "./Components/Signin";
@@ -10,12 +9,13 @@ import Header from "./Components/Header"
 
 import "./app.css"
 
-const App = () => {
+class App extends Component {
+  render() {
   return (
       <>
+        <Header/>
         <Particle/>
         <div className = "dabbe">
-            <Header/>
             <Signin/> 
             <About/>
             <Team/>
@@ -24,6 +24,7 @@ const App = () => {
       </>
         
   );
+}
 }
 
 export default App;
