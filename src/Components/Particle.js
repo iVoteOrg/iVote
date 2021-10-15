@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./ParticleScreen.css";
+import "./particle/ParticleScreen.css";
 
-import ParticleBackground from "./ParticleBackground";
+import ParticleBackground from "./particle/ParticleBackground";
 
 export default class Particle extends React.Component{
     render(){
         return(
-            <div className = "Particle_screen" >
+            <div className = "Particle_screen" id = "particle">
                 <ParticleBackground />
                 <div id="text_div center_all">
                     <div className="center_all">

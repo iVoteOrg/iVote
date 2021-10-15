@@ -1,24 +1,28 @@
 import React from "react";
+// import React, { Component } from 'react';
 
-import Particle from "./Components/particle/Particle"
-import Signin from "./Components/signin/Signin";
-import About from "./Components/About/About";
-import Team from "./Components/teamMember/Team";
-import Contact from "./Components/contact/Contact";
-import Navbar from "./Components/navbar/Navbar";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Particle from "./Components/Particle"
+import Signin from "./Components/Signin";
+import About from "./Components/About";
+import Team from "./Components/Team";
+import Contact from "./Components/Contact";
+import Header from "./Components/Header"
 
+import "./app.css"
 
 const App = () => {
   return (
-    <div>
+      <>
         <Particle/>
-        <Signin/> 
-        <About/>
-        <Team/>
-        <Contact/>
-        <Navbar/>
-    </div>
+        <div className = "dabbe">
+            <Header/>
+            <Signin/> 
+            <About/>
+            <Team/>
+            <Contact/>
+        </div>
+      </>
+        
   );
 }
 
