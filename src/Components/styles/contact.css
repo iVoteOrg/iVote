@@ -1,4 +1,14 @@
 .contact_name {
-	background-color: burlywood;
-	height: 50vh;
+	height: 100vh;
+	color: white;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 100px;
+}
+#contact {
+	background-image: url(../images/sed.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }

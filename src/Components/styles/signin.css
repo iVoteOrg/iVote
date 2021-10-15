@@ -1,5 +1,14 @@
 .SignIn_word {
-	background-color: aqua;
-	height: 50vh;
+	height: 100vh;
+	color: white;
+	display: flex;
 	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 100px;
+}
+#sign_in {
+	background-image: url(../images/sed.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }

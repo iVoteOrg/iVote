@@ -15,12 +15,10 @@ class App extends Component {
       <>
         <Header/>
         <Particle/>
-        <div className = "dabbe">
-            <Signin/> 
-            <About/>
-            <Team/>
-            <Contact/>
-        </div>
+        <Signin/> 
+        <About/>
+        <Team/>
+        <Contact/>
       </>
         
   );
