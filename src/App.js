@@ -5,20 +5,23 @@ import Signin from "./Components/Signin";
 import About from "./Components/About";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
-import Header from "./Components/Header"
-
+import Header from "./Components/Header";
+import Scrool from "./Components/Scroll";
 import "./app.css"
 
 class App extends Component {
   render() {
   return (
       <>
-        <Header/>
+        <Scrool/>
         <Particle/>
-        <Signin/> 
-        <About/>
-        <Team/>
-        <Contact/>
+        <div>
+            <Header/>
+            <Signin/> 
+            <About/>
+            <Team/>
+            <Contact/>
+        </div>
       </>
         
   );

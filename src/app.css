@@ -8,12 +8,21 @@ html {
 	padding: 0%;
 }
 .navbar {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
-	margin-top: 20px;
+
 	background: rgba(131, 131, 131, 0.397);
+}
+.navbar:hover {
+	transition: 0.5s;
+	background-color: rgb(44, 44, 44);
+}
+.navbar1 {
+	position: absolute;
+	top: 85vh;
+	left: 0px;
 }
 .nav-header {
 	display: flex;
@@ -21,17 +30,13 @@ html {
 }
 
 .nav-links {
-	height: 0;
 	list-style-type: none;
 }
 .nav-links a {
 	text-decoration: none;
 	color: white;
 	transition: var(--mainTransition);
-	font-size: 1.2rem;
-
-	font-family: var(--main-font);
-	letter-spacing: var(--mainSpacing);
+	font-size: 1.3rem;
 }
 
 @media screen and (min-width: 768px) {
