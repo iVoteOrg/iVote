@@ -1,15 +1,17 @@
-.team_name {
-	height: 100vh;
-	color: white;
-	display: flex;
+.center {
+	
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	font-size: 100px;
+	
 }
-#team_par_ja {
+#teams {
 	background-image: url(../images/sed.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	margin-top: -10px;
+	margin-top: -20px;
+}
+.big {
+	font-size: 50px;
+	padding: 30px;
 }

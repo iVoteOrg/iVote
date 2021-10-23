@@ -1,14 +1,17 @@
-.SignIn_word {
-	height: 100vh;
-	color: white;
-	display: flex;
+.center {
+	
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	font-size: 100px;
+	
 }
-#sign_in {
-	background-image: url(../images/network.jpg);
+#signin {
+	background-image: url(../images/sed.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	margin-top: -20px;
+}
+.big {
+	font-size: 50px;
+	padding: 30px;
 }

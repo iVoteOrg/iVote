@@ -1,16 +1,17 @@
-.about_name {
-	height: 100vh;
-	color: white;
-	display: flex;
+.center {
+	
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	font-size: 100px;
+	
 }
 #about {
 	background-image: url(../images/sed.jpg);
 	background-repeat: no-repeat;
-	background-size: 120%;
-	max-width: 100%;
-	max-height: 100%;
+	background-size: 100%;
+	margin-top: -20px;
+}
+.big {
+	font-size: 50px;
+	padding: 30px;
 }
