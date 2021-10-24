@@ -5,18 +5,16 @@ import Signin from "./Components/Signin";
 import About from "./Components/About";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
-import Header from "./Components/Header";
-import Scrool from "./Components/Scroll";
+import Navbar from "./Components/Navbar";
 import "./app.css"
 
 class App extends Component {
   render() {
   return (
       <>
-        <Scrool/>
         <Particle/>
         <div>
-            <Header/>
+            <Navbar/>
             <Signin/> 
             <About/>
             <Team/>
