@@ -8,22 +8,25 @@ import Contact from "./Components/Contact";
 import Navbar from "./Components/Navbar";
 import "./app.css"
 
-class App extends Component {
-  render() {
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+function App(){
   return (
       <>
-        <Particle/>
-        <div>
+          <Router>
             <Navbar/>
-            <Signin/> 
-            <About/>
-            <Team/>
-            <Contact/>
-        </div>
+            <Switch>
+              <Route path='/' exact component = {Particle}/>
+              <Route path='/SignIn' exact component = {Signin}/>
+              <Route path='/about' exact component = {About}/>
+              <Route path='/contact' exact component = {Contact}/>
+              <Route path='/team' exact component = {Team}/>
+            </Switch>
+          </Router>
+            
       </>
         
   );
-}
 }
 
 export default App;

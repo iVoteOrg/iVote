@@ -1,29 +1,43 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import Container from "react-bootstrap/Container";
+// import Nav from "react-bootstrap/Nav";
 
+import{
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu, 
+  NavBtn,
+  NavBtnLink
+} from './Navitems';
 
-export default class Navbars extends React.Component{
-    render(){
-        return(
-            <>
-            <div>
-  <Navbar bg="dark" variant="dark">
-    <Container>
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="me-auto">
-      <Nav.Link href="#Sign-in
-">Sign-in
-</Nav.Link>
-      <Nav.Link href="#About">About</Nav.Link>
-      <Nav.Link href="#Team">Team</Nav.Link>
-      <Nav.Link href="#Contact">Contact</Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar>
-  </div>
-  </>
-  )
- }
+const Navbars = () =>{
+    return(
+      <>
+        <Nav>
+          <NavLink to ="/">
+            <h1>
+              I-Vote
+            </h1>
+          </NavLink>
+          <Bars/>
+          <NavMenu>
+            <NavLink to ='/about' activeStyle>
+              About
+            </NavLink>
+            <NavLink to ='/team' activeStyle>
+              Team
+            </NavLink>
+            <NavLink to ='/contact' activeStyle>
+              Contact
+            </NavLink>
+          </NavMenu>
+          <NavBtn>
+            <NavBtnLink to ='/signin'>SignIn</NavBtnLink>
+          </NavBtn>
+        </Nav>
+      </>
+    );
 };
+export default Navbars;
