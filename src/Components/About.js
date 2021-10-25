@@ -8,8 +8,8 @@ export default class About extends React.Component{
     render(){
         return(
           <div id="about">
-            <Navbar/>
             <div className="center">
+              <Navbar/>
               <Card.Title className="big">About</Card.Title>
               <Card.Text>
                 This is a wider card with supporting text below as a natural lead-in to
