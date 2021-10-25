@@ -5,7 +5,7 @@ import {FaBars} from 'react-icons/fa'
 export const Nav = styled.nav`
     background: #000;
     height: 80px;
-    display: flex;
+    display: fixed;
     justify-content: space-between;
     padding: 0.5rem calc((100vw - 1000px) /2);
     z-index: 10;
@@ -64,8 +64,6 @@ export const NavBtnLink = styled(Link)`
     background: #256ce1;
     padding: 10px 22px;
     color: #fff;
-    border: none;
-    outline: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;

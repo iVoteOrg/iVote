@@ -1,25 +1,12 @@
 import React from "react";
-// import Navbar from "react-bootstrap/Navbar";
-// import Container from "react-bootstrap/Container";
-// import Nav from "react-bootstrap/Nav";
-
-import{
-  Nav,
-  NavLink,
-  Bars,
-  NavMenu, 
-  NavBtn,
-  NavBtnLink
-} from './Navitems';
+import{Nav,NavLink,Bars,NavMenu, NavBtn,NavBtnLink} from './Navitemscss';
 
 const Navbars = () =>{
     return(
       <>
         <Nav>
           <NavLink to ="/">
-            <h1>
-              I-Vote
-            </h1>
+            <h1>I-Vote</h1>
           </NavLink>
           <Bars/>
           <NavMenu>
