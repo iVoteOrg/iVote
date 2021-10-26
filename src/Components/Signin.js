@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/signin.css';
 import Card from "react-bootstrap/Card";
 import Navbar from "./Navbar";
+// import Footer from './Footer';
+
 
 export default class Signin extends React.Component{
     render(){
@@ -23,6 +25,7 @@ export default class Signin extends React.Component{
             </div>
             
           </div>
+          
         )
     }
 };
