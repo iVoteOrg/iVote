@@ -6,8 +6,8 @@
 #teams {
 	background-image: url(../images/sed.jpg);
 	background-repeat: repeat;
-	background-size: 100%;
-	
+	height: 100vh;
+
 	margin-bottom: -25px;
 }
 .big {
