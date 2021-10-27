@@ -31,7 +31,7 @@ export default class Contact extends React.Component{
                       <div className="center_all">
                           <div>
                           <h1 className ="h1-tag" style = {{marginTop:'25px'}}>
-                            Contact Form
+                            Contact Us
                           </h1>
                           <form className = "row cscscas" onSubmit= {sendEmail}>
                             <label className ="left-shigt">First Name</label>
