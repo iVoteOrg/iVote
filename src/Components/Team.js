@@ -9,83 +9,59 @@ export default class Team extends React.Component{
     render(){
         return(
           <div id="teams">
-            <div className="center">
-              <Navbar/>
-              <Card.Title className="big">Team</Card.Title>
-              <Card.Text>
-              <Container>
-  <Row className="justify-content-md-start pb-5">
-                <Col xs lg="4">
-                <Card style={{ width: '18rem' }} className="bg-dark">
-                <Card.Img variant="top" src="\Components\images\sed.jpg" roundedCircle />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some Custom text one can write here
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-                </Card>
-                </Col>
+            <Navbar />
+            <div className="section">
+              <Container className="container">
+                <Row className="pt-5">
+                  <Col>
+                    <Card style={{ width: '18rem' }} className="card">
+                      <div className="content">
+                        <Card.Img className="imgBx" variant="top" src="https://images.unsplash.com/photo-1635424240719-f62cec4775cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" />
+                        <Card.Body className="contentBx">
+                          <Card.Title>Card Title</Card.Title>
+                          <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                          </Card.Text>
+                          <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                      </div>
+                    </Card>
+                  </Col>
 
-                <Col xs lg="4">
-                <Card style={{ width: '18rem' }} className="bg-dark">
-                <Card.Img variant="top" src="\Components\images\sed.jpg" roundedCircle />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some Custom text one can write here
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-                </Card>
-                </Col>
+                  <Col>
+                    <Card style={{ width: '18rem' }}>
+                    <div className="content">
+                        <Card.Img className="imgBx" variant="top" src="https://images.unsplash.com/photo-1635424240719-f62cec4775cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" />
+                        <Card.Body className="contentBx">
+                          <Card.Title>Card Title</Card.Title>
+                          <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                          </Card.Text>
+                          <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                      </div>
+                    </Card>
+                  </Col>
 
-                <Col xs lg="4">
-                <Card style={{ width: '18rem' }} className="bg-dark">
-                <Card.Img variant="top" src="\Components\images\sed.jpg" roundedCircle />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some Custom text one can write here
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-                </Card>
-                </Col>
-
+                  <Col>
+                    <Card style={{ width: '18rem' }}>
+                    <div className="content">
+                        <Card.Img className="imgBx" variant="top" src="https://images.unsplash.com/photo-1635424240719-f62cec4775cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" />
+                        <Card.Body className="contentBx">
+                          <Card.Title>Card Title</Card.Title>
+                          <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                          </Card.Text>
+                          <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                      </div>
+                    </Card>
+                  </Col>
                 </Row>
-
-                <Row className="justify-content-md-center">
-                <Col xs lg="3">
-                <Card style={{ width: '18rem' }} className="pr-5 bg-dark">
-                <Card.Img variant="top" src="\Components\images\sed.jpg" roundedCircle />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some Custom text one can write here
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-                </Card>
-                </Col>
-
-                <Col xs lg="3">
-                <Card style={{ width: '18rem' }} className="bg-dark">
-                <Card.Img variant="top" src="\Components\images\sed.jpg" roundedCircle />
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some Custom text one can write here
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-                </Card>
-                </Col>
-
-                </Row>
-                </Container>
-              </Card.Text>
+              </Container>
             </div>
           </div>
         )
