@@ -1,16 +1,10 @@
-.center {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	color: white;
-}
 #about {
 	background-image: url(../images/sed.jpg);
-	background-repeat: no-repeat;
-	height: 100vh;
-	margin-bottom: -25px;
+	background-repeat: repeat;
+	color: white;
+	/* margin: 0px !important; */
 }
-.big {
-	font-size: 50px;
-	padding: 30px;
+.conatiner {
+	margin: 0px 0px !important;
+	padding: 0px !important;
 }

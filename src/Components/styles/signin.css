@@ -1,7 +1,6 @@
 #signin {
 	background-color: grey;
-	height: 100vh;
-	margin-bottom: -25px;
+	min-height: 100vh;
 }
 .grid-container {
 	display: grid;

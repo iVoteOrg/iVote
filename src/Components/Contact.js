@@ -3,7 +3,8 @@ import Navbar from "./Navbar";
 import emailjs from "emailjs-com"
 import "./particle/ParticleScreen.css";
 import ParticleBackground from "./particle/ParticleBackground";
-import './styles/contact.css'
+import './styles/contact.css';
+import Footer from './Footer';
 
 export default class Contact extends React.Component{
     render(){
@@ -46,6 +47,7 @@ export default class Contact extends React.Component{
                       </div>
                   </div>
               </div>
+              <Footer/>
             </div>
         )
     }

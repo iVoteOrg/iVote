@@ -1,36 +1,27 @@
 import React from "react";
-import {
-Box,
-Container,
-Row,
-Column,
-FooterLink,
-Heading,
-} from "./FooterStyle";
+import {Container, Button, Row, Col} from 'react-bootstrap'
+import './styles/footer.css'
 
-const Footer = () => {
-return (
-	<Box>
-	<Container>
-		<Row>
-		<Column>
-			<Heading>About Us</Heading>
+const Footers = () =>{
+    return(
+      <>
+       <div className="footer bg-dark">
+		    <Container className="p-4">
+				<div>
+					<Button href="/signin" className="btn btn-outline-white btn-rounded">Sign-in</Button>
+				</div>
+			</Container>
 			
-		</Column>
-		<Column>
-			<Heading>Services</Heading>
-			
-		</Column>
-		<Column>
-			<Heading>Contact Us</Heading>
-			
-		</Column>
-		<Column>
-			<Heading>Social Media</Heading>
-		</Column>
-		</Row>
-	</Container>
-	</Box>
-);
+	   </div>
+
+	   <div className="ooter">
+	   		<Container>
+				<div className="pt-2">
+					<p className="text-white">© 2021 Copyright: i-Vote.com</p>
+				</div>
+			</Container>
+			</div>
+      </>
+    );
 };
-export default Footer;
+export default Footers;

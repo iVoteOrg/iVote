@@ -3,7 +3,7 @@
 #teams {
 	background-image: url(../images/sed.jpg);
 	background-repeat: repeat;
-	padding-bottom: 100px;
+	
 }
 
 .section {
@@ -25,17 +25,17 @@ margin: 40px 0;
 }
 
 .container .card {
-position: relative;
-width: 300px; 
-height: 400px;
-background: rgba(255, 255, 255, 0.05);
-margin: 20px;
-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+
+
+
+background: rgba(26, 13, 13, 0.2);
+
+box-shadow: 0 15px 35px rgba(148, 145, 145, 0.05);
 border-radius: 15px;
 display: flex;
 justify-content: center;
 align-items: center;
-backdrop-filter: blur(10px);
+backdrop-filter: blur(5px);
 }
 
 .container .card .content {

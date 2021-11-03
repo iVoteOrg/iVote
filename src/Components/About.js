@@ -1,37 +1,32 @@
 import React from "react";
 import "./styles/about.css";
-import Card from "react-bootstrap/Card";
 import Navbar from "./Navbar";
-// import Footer from './Footer';
+import Footer from './Footer';
 import {Container, Row, Col} from 'react-bootstrap'
 
 export default class About extends React.Component{
     render(){
         return(
           <div id="about">
-            <div className="center">
-              <Navbar/>
-              <Card.Title className="big">About</Card.Title>
-              <Card.Text>
-                
+            <Navbar/>
+            <div className="section">
               <Container>
-  <Row className="justify-content-md-start">
-    <Col xs lg="12">
-      <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin condimentum ligula vel pretium. Praesent nec feugiat erat. Nunc consectetur, leo sed ullamcorper eleifend, tortor mauris mattis velit, in efficitur mauris erat a massa. Donec sollicitudin ante id blandit volutpat. Quisque lacinia semper lacus vitae imperdiet. Donec malesuada, nulla quis congue malesuada, nisi augue imperdiet sapien, et blandit ante nibh a orci. Donec at lacinia justo. Etiam dignissim vitae eros ac ultrices. Nullam eget laoreet eros, vel pulvinar dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc sit amet dignissim magna, quis ultricies mauris.
-    </p>
-          <p>
-    Aenean auctor nibh non bibendum tristique. Sed eu tincidunt nisl. Phasellus bibendum risus eget magna pharetra commodo. Vestibulum leo ex, tincidunt vitae lacus id, scelerisque lacinia metus. Donec dignissim id augue at suscipit. Nullam feugiat turpis eu ipsum gravida, quis tristique enim dignissim. Integer aliquet blandit tortor, nec imperdiet nisl vestibulum et. Etiam iaculis eros nisi, in tincidunt leo faucibus nec. Etiam id facilisis metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In eget elit a velit rhoncus malesuada. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut porttitor ipsum lectus, id tincidunt magna auctor eget. Fusce semper velit enim, ut lobortis turpis viverra non. Quisque cursus cursus risus sit amet hendrerit.
-    </p>
-    </Col>
+                <h1>About</h1>
+                <Row>
+                  <Col>
+                    <p className="pt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae molestie turpis. Praesent non ipsum id risus rhoncus semper at ac justo. In hac habitasse platea dictumst. Quisque dapibus porta feugiat. Vivamus vitae faucibus odio. Donec bibendum vestibulum neque ac ultricies. Mauris id sapien id enim luctus placerat ut in felis. Morbi vel mattis est, non varius eros. Morbi sodales, nulla et consequat porttitor, nisi urna vulputate eros, consectetur placerat ipsum ante a enim. Vestibulum lorem nunc, placerat accumsan luctus non, volutpat quis purus. Donec commodo maximus turpis eu posuere. Maecenas at lectus lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed cursus consequat mauris.
+                    </p>
 
-    
-  </Row>
-</Container>
-              </Card.Text>
-              
+                    <p className="pt-2">
+                    Donec id ex nunc. Sed accumsan facilisis nisi. Aenean gravida, leo vitae vehicula sagittis, justo quam elementum magna, gravida elementum augue risus nec nibh. In maximus, eros eu ornare mattis, orci ligula tempus ligula, quis posuere est risus at dolor. Nunc a orci et enim efficitur tincidunt. Duis iaculis sapien laoreet ante sodales efficitur. Ut eget interdum massa, ac semper sem. Donec vulputate, mauris non condimentum blandit, libero ante tristique ante, sed vulputate nisi justo eget massa. Duis metus libero, malesuada quis maximus eu, mollis at ipsum. Ut eu fringilla diam. Nullam id pharetra turpis, ac mattis nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis fringilla commodo velit, nec vestibulum massa dignissim mattis. Nulla maximus finibus ex. Phasellus posuere quam sed ante vestibulum commodo. Aenean sit amet nisi a mi rhoncus porta.
+
+                    </p>
+                  </Col>
+                </Row>
+              </Container>
             </div>
-            {/* <Footer /> */}
+            <Footer/>
           </div>
         )
     }
