@@ -15,14 +15,14 @@ class App extends Component {
     return (
       <>
       <Router>
-          <Switch>
-              <Route path='/' exact component = {Particle}/>
-              <Route path='/SignIn' exact component = {Signin}/>
-              <Route path='/about' exact component = {About}/>
-              <Route path='/contact' exact component = {Contact}/>
-              <Route path='/team' exact component = {Team}/>
-              <Route path='/user' exact component = {User}/>
-            </Switch>
+          <div>
+              < Route exact path='/' component = {Particle}/>
+              <Route exact path='/SignIn' component = {Signin}/>
+              <Route exact path='/about' component = {About}/>
+              <Route exact path='/contact' component = {Contact}/>
+              <Route exact path='/team' component = {Team}/>
+              <Route exact path='/user' component = {User}/>
+            </div>
           </Router>
       </>
     );

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './styles/signin.css';
 import Navbar from "./Navbar";
 import Footer from './Footer';
@@ -17,7 +17,7 @@ export default class Signin extends React.Component{
                 
                 <div className ="grid-item grid-item-2">
                   <form className = " cscscas" >
-                  <h3 style ={{textAlign: "center"}}>LoginIn</h3>
+                  <h3 style ={{textAlign: "center"}}>Log In</h3>
                     <label className ="left-shigt">Email</label>
                     <input placeholder="Enter your Email-ID" type='email' name = "user_email" className ="form-control"/>
                     <label className ="left-shigt">Password</label>
@@ -26,7 +26,6 @@ export default class Signin extends React.Component{
                     <input type = "submit" value = 'Login'  style = {{marginTop: '30px'}}/>
                   </form>
                 </div>
-                
               </div>
             </div>
             <Footer/>
