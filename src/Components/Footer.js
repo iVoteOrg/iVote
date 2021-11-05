@@ -6,11 +6,9 @@ const Footers = () =>{
     return(
       <>
           <div className="ooter">
-	   		<Container>
 				<div className="pt-2">
 					<p className="text-white">© 2021 Copyright: i-Vote.com</p>
 				</div>
-			</Container>
 			</div>
       </>
     );
