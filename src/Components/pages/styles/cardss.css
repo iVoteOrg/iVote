@@ -53,3 +53,14 @@
 	justify-content: left;
 	font-size: 18px;
 }
+@media screen and (max-width: 1051px) {
+	.card_last_1 {
+		margin-bottom: 20px;
+	}
+	.card_last_2 {
+		margin-bottom: 20px;
+	}
+	.card_last_3 {
+		margin-bottom: 20px;
+	}
+}

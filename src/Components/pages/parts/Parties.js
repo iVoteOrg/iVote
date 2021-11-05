@@ -17,8 +17,6 @@ export default class About extends React.Component{
                 <PartyCards/>
                 <PartyCards/>
                 <PartyCards/>
-                <PartyCards/>
-                <PartyCards/>
                 
             </div>
         </div>

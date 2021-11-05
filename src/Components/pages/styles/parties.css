@@ -1,6 +1,5 @@
 .parties {
 	/* background-color: aqua; */
-
 	background-image: url(../images/network.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -31,12 +30,20 @@
 }
 .party-name {
 	background-color: green;
+	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: white;
 }
 .h111 {
 	color: red;
 	text-align: center;
+}
+.vote-btn {
+	background-color: red;
+}
+.party-name > .threat_btn {
+	justify-content: right;
+	margin-left: 150px;
+	font-size: 10px;
 }

@@ -22,7 +22,7 @@ export default class About extends React.Component{
     return (
         <YouTube 
             videoId={videoId} 
-            opts={opts} 
+            opts={opts}
             onReady={this.videoOnReady} />
         );
   }

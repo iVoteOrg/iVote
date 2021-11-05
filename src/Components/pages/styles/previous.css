@@ -1,27 +1,33 @@
 .previous {
-	height: 100vh;
-	padding: 20px;
-	width: 100%;
+	background-color: slateblue;
 	background-image: url(../images/network.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: slateblue;
+	/* padding-bottom: 50px; */
 }
 .inn {
 	height: 100%;
 	border-radius: 80px;
 	padding: 20px;
 	text-align: center;
-
 	color: white;
-	position: relative;
 }
 .container-box {
 	display: flex;
-	background-color: blue;
+
 	height: 80%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.h1-heading {
+	color: red;
+	text-align: center;
+}
+@media screen and (min-width: 1051px) {
+	.previous {
+		height: 90vh;
+	}
 }
