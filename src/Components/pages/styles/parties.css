@@ -1,10 +1,40 @@
 .parties {
-	background-color: aqua;
-	height: 150vh;
-	padding: 20px;
+	/* background-color: aqua; */
+
 	background-image: url(../images/network.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	margin-bottom: -25px;
+}
+.parties-container {
+	display: flex;
+	/* background-color: blue; */
+	height: 90%;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+.card_box {
+	background-color: red;
+	height: 200px;
+	width: 300px;
+	display: grid;
+	grid-template-rows: 80% 20%;
+	margin-bottom: 20px;
+}
+.party-logo {
+	background-image: url(../images/human.jpg);
+	background-size: cover;
+	background-color: hotpink;
+}
+.party-name {
+	background-color: green;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
 }
 .h111 {
 	color: red;
