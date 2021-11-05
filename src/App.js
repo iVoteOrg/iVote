@@ -6,6 +6,7 @@ import Signin from "./Components/Signin";
 import About from "./Components/About";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
+import User from "./Components/pages/User";
 
 import "./app.css"
 
@@ -20,6 +21,7 @@ class App extends Component {
               <Route path='/about' exact component = {About}/>
               <Route path='/contact' exact component = {Contact}/>
               <Route path='/team' exact component = {Team}/>
+              <Route path='/user' exact component = {User}/>
             </Switch>
           </Router>
       </>

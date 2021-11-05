@@ -1,8 +1,6 @@
 import React from "react";
-// import{} from './Navitemscss';
 import './styles/navbar.css'
 import {Container, Navbar, Nav, Button} from 'react-bootstrap'
-
 
 const Navbars = () =>{
     return(
@@ -15,10 +13,9 @@ const Navbars = () =>{
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href="/team">Team</Nav.Link>
+                <Nav.Link href="/contact">Update Info</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
-                <Button href="/user" className="ml-4">Sign-in</Button>
+                <Button href="/" className="ml-4">Log-Out</Button>
               </Nav>
             </Navbar.Collapse>
           </Container>

@@ -1,0 +1,16 @@
+.navbar {
+	opacity: 1;
+	border-bottom: 5px solid #007bff;
+	/* margin-top: 10px !important; */
+	padding: 0px;
+	margin: 0px;
+}
+
+.container {
+	padding: 0px;
+	margin: 10px 10px !important;
+}
+
+.p {
+	padding-left: 450px;
+}
