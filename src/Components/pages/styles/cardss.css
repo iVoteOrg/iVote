@@ -1,0 +1,55 @@
+.card_last_1 {
+	display: grid;
+	grid-template-rows: 10% 70% 20%;
+	background-color: rgba(255, 255, 255, 0.411);
+	height: 400px;
+	width: 350px;
+	border-radius: 80px;
+	padding: 20px 10px;
+	color: black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+}
+.card_last_2 {
+	display: grid;
+	grid-template-rows: 10% 70% 20%;
+	background-color: rgba(255, 255, 255, 0.411);
+	height: 400px;
+	width: 350px;
+	border-radius: 80px;
+	padding: 20px 10px;
+	color: black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+}
+.card_last_3 {
+	display: grid;
+	grid-template-rows: 10% 70% 20%;
+	background-color: rgba(255, 255, 255, 0.411);
+	height: 400px;
+	width: 350px;
+	border-radius: 80px;
+	padding: 20px 10px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: black;
+	text-align: center;
+}
+.year_box {
+	font-weight: 900;
+	font-size: 20px;
+}
+.image_box {
+	background-image: url(../images/human.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+}
+.details_box {
+	background-color: violet;
+	border-radius: 50px;
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	font-size: 18px;
+}
