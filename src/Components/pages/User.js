@@ -1,8 +1,11 @@
 import React from "react";
-import Navi from './Navi';
+
+import Navi from './parts/Navi';
+import Procedure from './parts/Procedure';
+import Previous from './parts/Previous';
+import Parties from './parts/Parties';
+
 import './styles/user.css'
-import Procedure from './Procedure';
-import Previous from './Previous';
 
 export default class About extends React.Component{
     render(){
@@ -11,6 +14,7 @@ export default class About extends React.Component{
             <Navi/>
             <Procedure/>
             <Previous/>
+            <Parties/>
         </div>
         )
     }

@@ -1,12 +1,11 @@
 .previous {
-	height: 92vh;
+	height: 100vh;
 	padding: 20px;
 	width: 100%;
 	background-image: url(../images/network.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: slateblue;
-	margin-bottom: -25px;
 }
 .inn {
 	height: 100%;

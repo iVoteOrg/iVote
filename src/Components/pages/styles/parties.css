@@ -1,0 +1,12 @@
+.parties {
+	background-color: aqua;
+	height: 150vh;
+	padding: 20px;
+	background-image: url(../images/network.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.h111 {
+	color: red;
+	text-align: center;
+}

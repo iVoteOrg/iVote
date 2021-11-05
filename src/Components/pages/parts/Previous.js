@@ -1,6 +1,6 @@
 import React from "react";
-import './styles/previous.css'
-import './styles/cardss.css'
+import '../styles/previous.css'
+import '../styles/cardss.css'
 
 export default class About extends React.Component{
     render(){
