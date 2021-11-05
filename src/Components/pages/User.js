@@ -1,19 +1,13 @@
 import React from "react";
 import Navi from './Navi';
 import './styles/user.css'
+import Procedure from './Procedure'
 export default class About extends React.Component{
     render(){
         return(
         <div>
             <Navi/>
-            <div className = "procedure">
-                <div className = "inner">
-                    <h1>
-                        Procedure of Voting
-                    </h1>
-                    
-                </div>
-            </div>
+            <Procedure/>
             <div className = "previous">
                 <div className = "inner">
                     <h1>
