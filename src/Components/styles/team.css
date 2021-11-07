@@ -3,7 +3,6 @@
 #teams {
 	background-image: url(../images/sed.jpg);
 	background-repeat: repeat;
-	
 }
 
 .section {
@@ -12,6 +11,8 @@
 	align-items: center; 
 	flex-wrap: wrap;  
 	min-height: 100vh;
+padding: 100px 0px !important;	
+
 }
 
 .container {
@@ -22,12 +23,10 @@ justify-content: center;
 align-items: center; 
 flex-wrap: wrap; 
 margin: 40px 0; 
+
 }
 
 .container .card {
-
-
-
 background: rgba(26, 13, 13, 0.2);
 
 box-shadow: 0 15px 35px rgba(148, 145, 145, 0.05);
@@ -78,4 +77,8 @@ Letter-spacing: 2px;
 font-weight: 500;
 font-size: 18px;
 text-align: center; margin: 20px 0 1;
+}
+
+.row2 {
+	padding-right: 200px;
 }

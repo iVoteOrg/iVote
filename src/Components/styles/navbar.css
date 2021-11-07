@@ -1,16 +1,8 @@
 .navbar {
-    opacity: 0.7;
-    border-bottom: 5px solid #007bff;
-    /* margin-top: 10px !important; */
-    padding: 0px;
-    margin: 0px;
+    opacity: 0.7 !important;
 }
 
-.container {
-    padding: 0px;
-    margin: 20px 20px !important;
-}
+#basic-navbar-nav, .p {
 
-.p {
-    padding-left: 450px;
+padding-left: 300px;
 }

@@ -1,15 +1,44 @@
 import React from "react";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import './styles/footer.css'
 
-const Footers = () =>{
-    return(
-      <>
-          <div className="ooter">
-				<div className="pt-2">
-					<p className="text-white">© 2021 Copyright: i-Vote.com</p>
-				</div>
-			</div>
-      </>
-    );
-};
-export default Footers;
+const FooterPage = () => {
+  return (
+    <MDBFooter className="font-small pt-4 mt-4 bg-dark text-white op">
+      <MDBContainer fluid className="text-center text-md-left">
+        <MDBRow>
+          <MDBCol md="6">
+            <h5 className="title">About i-Vote</h5>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae molestie turpis. Praesent non ipsum id risus rhoncus semper at ac justo. In hac habitasse platea dictumst. Quisque dapibus porta feugiat. Vivamus vitae faucibus odio. 
+            </p>
+          </MDBCol>
+          <MDBCol md="6">
+            <h5 className="title">Links</h5>
+            <ul>
+              <li className="list-unstyled">
+                <a href="#!">Link 1</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 2</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 3</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+        <p className="text-white">© 2021 Copyright: i-Vote.com</p>
+        </MDBContainer>
+      </div>
+    </MDBFooter>
+  );
+}
+
+export default FooterPage;

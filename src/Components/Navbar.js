@@ -11,6 +11,7 @@ const Navbars = () =>{
           <Container className="justify-content-center">
             <Navbar.Brand href="/">i-Vote</Navbar.Brand>
           </Container>
+          
           <Container className="p">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

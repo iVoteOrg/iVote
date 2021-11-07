@@ -35,7 +35,7 @@ export default class Team extends React.Component{
                   </Col>
                 </Row>
 
-                <Row className="pt-5">
+                <Row className="pt-5 row2">
                   <Col>
                     <Card>
                       <GlassCard />
