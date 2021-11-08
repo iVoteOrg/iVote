@@ -16,8 +16,9 @@
 		rgba(162, 162, 245, 1) 56%,
 		rgba(11, 156, 186, 1) 100%
 	);
+	/* background: black; */
 	height: 100vh;
-	margin-bottom: -25px;
+	margin-bottom: -45px;
 }
 
 .cscscas {
@@ -46,4 +47,7 @@
 	text-align: left;
 	color: white;
 	margin-top: 20px;
+}
+.contact_pageeee {
+	margin-bottom: -50px;
 }

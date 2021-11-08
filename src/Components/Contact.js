@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import emailjs from "emailjs-com"
-import "./particle/ParticleScreen.css";
-import ParticleBackground from "./particle/ParticleBackground";
+import ParticleBackground from "./particle/Particle_Contact";
 import './styles/contact.css';
 import Footer from './Footer';
 
@@ -24,8 +23,9 @@ export default class Contact extends React.Component{
 
 
         return(
-          <div id="contact" className="center ">
-              <div className = "Particle_screen" id = "particle">
+          <div className = "contact_pageeee">
+            <div id="contact" className="center">
+              <div className = "Particle_screen_1" id = "particle">
                 <Navbar/>
                   <ParticleBackground />
                   <div id="text_div center_all">
@@ -47,8 +47,9 @@ export default class Contact extends React.Component{
                       </div>
                   </div>
               </div>
-              <Footer/>
+              {/* <Footer/> */}
             </div>
+          </div>
         )
     }
 };

@@ -1,30 +1,74 @@
 #signin {
-	background-color: grey;
+	background-color: black;
 	min-height: 100vh;
+	text-align: center;
 }
 .grid-container {
 	display: grid;
-	grid-template-columns: 1.5fr 1fr;
-	background-color: hotpink;
+	grid-template-columns: 1.6fr 1fr;
+	/* background-image: url(/src/Components/images/check.png); */
 	height: 90vh;
 	padding: 20px;
+	/* background-size: cover; */
+	background-color: #aebaf9;
+	background-color: #4d56e8;
+
+	background: #348288;
+	background: -webkit-linear-gradient(top left, #348288, #4c4ae2);
+	background: -moz-linear-gradient(top left, #348288, #4c4ae2);
+	background: linear-gradient(to bottom right, #348288, #4c4ae2);
 }
 .grid-item-1 {
-	background-color: rgb(236, 210, 255);
-	background-image: url(/src/Components/images/sed.jpg);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px;
 	color: white;
-	font-size: 50px;
 }
 .grid-item-2 {
-	background-color: lavenderblush;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 20px 50px;
+	color: white;
+}
+.form_format {
+	height: 450px;
+	background-color: rgba(245, 255, 105, 0.034);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	padding: 50px;
+	border-radius: 20px;
+}
+.form_format:hover {
+	background-color: rgba(53, 51, 52, 0.151);
+	border-radius: 50px;
+	transition: 0.3s;
+	transform: scale(1.2);
+}
+.submit_btn_d {
+	margin-top: 30px;
+	text-align: center;
+}
+.submit_btn {
+	background-color: red;
+	padding: 2px 15px;
+	text-align: center;
+	background: rgb(142, 191, 120);
+	background: radial-gradient(
+		circle,
+		rgba(142, 191, 120, 1) 13%,
+		rgba(62, 172, 87, 1) 43%,
+		rgba(133, 198, 59, 1) 88%
+	);
+	color: white;
+	border-radius: 50px;
+}
+.submit_btn:hover {
+	background-color: blue;
+	transition: 0.5s;
+	transform: translate(5px, 5px);
+	transform: scale(1.3);
 }
 @media screen and (max-width: 780px) {
 	.grid-item-1 {

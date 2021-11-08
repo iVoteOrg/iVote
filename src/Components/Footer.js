@@ -8,7 +8,7 @@ const FooterPage = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">About i-Vote</h5>
+            <h5 className="title ">About i-Vote</h5>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae molestie turpis. Praesent non ipsum id risus rhoncus semper at ac justo. In hac habitasse platea dictumst. Quisque dapibus porta feugiat. Vivamus vitae faucibus odio. 
             </p>

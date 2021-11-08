@@ -1,9 +1,9 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 50,
+      value: 35,
       density: {
-        enable: false,
+        enable: true,
         value_area: 800
       }
     },
@@ -11,7 +11,7 @@ const particlesConfig = {
       value: "#ffffff"
     },
     shape: {
-      type: "image",
+      type: "polygon",
       stroke: {
         width: 0,
         color: "#000000"
@@ -20,14 +20,14 @@ const particlesConfig = {
         nb_sides: 5
       },
       image: {
-        src: "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/krinnxb23kgp75s0jyhp",
+        src: "img/github.svg",
         width: 100,
         height: 100
       }
     },
     opacity: {
-      value: 0.5050784055306087,
-      random: true,
+      value: 0.3314577036294619,
+      random: false,
       anim: {
         enable: false,
         speed: 1,
@@ -36,7 +36,7 @@ const particlesConfig = {
       }
     },
     size: {
-      value: 51.29702556170245,
+      value: 3,
       random: true,
       anim: {
         enable: false,
@@ -46,56 +46,56 @@ const particlesConfig = {
       }
     },
     line_linked: {
-      enable: false,
-      distance: 157.83700172831522,
+      enable: true,
+      distance: 170,
       color: "#ffffff",
       opacity: 0.4,
-      width: 2
+      width: 1
     },
     move: {
       enable: true,
-      speed: 4,
-      direction: "left",
-      random: true,
+      speed: 3,
+      direction: "none",
+      random: false,
       straight: false,
-      out_mode: "bounce",
+      out_mode: "out",
       bounce: false,
       attract: {
         enable: false,
-        rotateX: 1420.5330155548368,
-        rotateY: 7260.5020795025
+        rotateX: 600,
+        rotateY: 1200
       }
     }
   },
   interactivity: {
-    detect_on: "window",
+    detect_on: "canvas",
     events: {
       onhover: {
         enable: true,
-        mode: "grab"
+        mode: "bubble"
       },
       onclick: {
         enable: true,
-        mode: "repulse"
+        mode: "push"
       },
       resize: true
     },
     modes: {
       grab: {
-        distance: 120,
+        distance: 400,
         line_linked: {
-          opacity: 0.5
+          opacity: 1
         }
       },
       bubble: {
-        distance: 131.86813186813188,
-        size: 35.964035964035965,
-        duration: 9.59040959040959,
-        opacity: 1,
+        distance: 191.80819180819182,
+        size: 11.988011988011989,
+        duration: 5.194805194805195,
+        opacity: 0.47152847152847155,
         speed: 3
       },
       repulse: {
-        distance: 335.6643356643357,
+        distance: 200,
         duration: 0.4
       },
       push: {

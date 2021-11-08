@@ -7,7 +7,7 @@ import {Container, Navbar, Nav, Button} from 'react-bootstrap'
 const Navbars = () =>{
     return(
       <>
-        <Navbar expand="lg" className="navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <Navbar expand="lg" className="navbar-expand-sm bg-dark navbar-dark fixed-top skjlsdjgbsdjfbsdfv">
           <Container className="justify-content-center">
             <Navbar.Brand href="/">i-Vote</Navbar.Brand>
           </Container>

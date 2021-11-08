@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
-
+import { BrowserRouter as Router, Switch , Route} from 'react-router-dom';
 import Particle from "./Components/Particle"
 import Signin from "./Components/Signin";
 import About from "./Components/About";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
 import User from "./Components/pages/User";
-
 import "./app.css"
 
 class App extends Component {
@@ -15,14 +13,15 @@ class App extends Component {
     return (
       <>
       <Router>
-          <div>
-              < Route exact path='/' component = {Particle}/>
-              <Route exact path='/SignIn' component = {Signin}/>
-              <Route exact path='/about' component = {About}/>
-              <Route exact path='/contact' component = {Contact}/>
-              <Route exact path='/team' component = {Team}/>
-              <Route exact path='/user' component = {User}/>
-            </div>
+          <Switch>
+              <Route path='/' exact component = {Particle}/>
+              <Route path='/SignIn' exact component = {Signin}/>
+              <Route path='/about' exact component = {About}/>
+              <Route path='/contact' exact component = {Contact}/>
+              <Route path='/team' exact component = {Team}/>
+              <Route path='/user' exact component = {User}/>
+              
+            </Switch>
           </Router>
       </>
     );

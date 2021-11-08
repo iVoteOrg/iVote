@@ -1,8 +1,12 @@
 .navbar {
-    opacity: 0.7 !important;
+	opacity: 0.7 !important;
+	background-color: chartreuse;
 }
 
-#basic-navbar-nav, .p {
-
-padding-left: 300px;
+#basic-navbar-nav,
+.p {
+	padding-left: 300px;
+}
+.skjlsdjgbsdjfbsdfv {
+	padding-left: 100px;
 }
