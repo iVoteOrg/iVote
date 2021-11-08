@@ -7,7 +7,7 @@
 	display: grid;
 	grid-template-columns: 1.6fr 1fr;
 	/* background-image: url(/src/Components/images/check.png); */
-	height: 90vh;
+	min-height: 100vh;
 	padding: 20px;
 	/* background-size: cover; */
 	background-color: #aebaf9;

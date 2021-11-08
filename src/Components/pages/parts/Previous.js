@@ -11,7 +11,7 @@ export default class About extends React.Component{
                 <div className ="container-box">
                     <div className ="card_last_1">
                         <div className = "year_box">2018</div>
-                        <div className ="image_box"/>
+                        <div className ="image_box1"/>
                         <div className="details_box">
                             Congress
                             <br/>
@@ -21,7 +21,7 @@ export default class About extends React.Component{
                     
                     <div className ="card_last_2">
                        <div className = "year_box">2019</div>
-                        <div className ="image_box"/>
+                        <div className ="image_box2"/>
                          <div className="details_box">
                             Aam Admi Party
                             <br/>
@@ -31,7 +31,7 @@ export default class About extends React.Component{
 
                     <div className ="card_last_3">
                         <div className = "year_box">2020</div>
-                        <div className ="image_box"/>
+                        <div className ="image_box3"/>
                         <div className="details_box">
                             BJP
                             <br/>

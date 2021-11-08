@@ -2,9 +2,12 @@ import React from "react";
 import '../styles/user.css'
 import Video from './video';
 import {Button} from 'react-bootstrap'
+
+
 export default class About extends React.Component{
     render(){
         return(
+            
         <div className = "procedure">
             <div className = "inner">
                 <h1>

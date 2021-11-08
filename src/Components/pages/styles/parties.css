@@ -1,6 +1,11 @@
 .parties {
-	/* background-color: aqua; */
-	background-image: url(../images/network.jpg);
+	background: rgb(112, 110, 156);
+	background: linear-gradient(
+		90deg,
+		rgba(112, 110, 156, 1) 0%,
+		rgba(162, 162, 245, 1) 56%,
+		rgba(11, 156, 186, 1) 100%
+	);
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-bottom: -25px;
@@ -16,34 +21,67 @@
 	padding: 20px;
 }
 .card_box {
-	background-color: red;
-	height: 200px;
+	background-color: rgba(117, 204, 255, 0.219);
+	border: 5px black dotted;
+	border-style: double;
+	border-radius: 75px;
+	height: 350px;
 	width: 300px;
 	display: grid;
 	grid-template-rows: 80% 20%;
 	margin-bottom: 20px;
 }
+
 .party-logo {
-	background-image: url(../images/human.jpg);
 	background-size: cover;
-	background-color: hotpink;
+	border-radius: 50%;
+	transform: scale(0.8);
 }
 .party-name {
-	background-color: green;
-	color: white;
+	/* background-color: green; */
+	/* color: white; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .h111 {
-	color: red;
+	color: white;
 	text-align: center;
 }
 .vote-btn {
-	background-color: red;
+	background-color: rgb(145, 164, 248);
+	transform: scale(1.3);
 }
 .party-name > .threat_btn {
 	justify-content: right;
-	margin-left: 150px;
+	margin-left: 15px;
 	font-size: 10px;
+}
+
+.party-logo1 {
+	background-image: url(../images/1.jpg);
+}
+.party-logo2 {
+	background-image: url(../images/2.jpg);
+}
+.party-logo3 {
+	background-image: url(../images/3.jpg);
+}
+.party-logo4 {
+	background-image: url(../images/4.jpg);
+}
+.party-logo5 {
+	background-image: url(../images/5.jpg);
+}
+.party-logo6 {
+	background-image: url(../images/6.jpg);
+}
+.party-logo7 {
+	background-image: url(../images/7.jpg);
+}
+.party-logo8 {
+	background-image: url(../images/8.jpg);
+}
+.party-logo9 {
+	background-image: url(../images/9.jpg);
 }

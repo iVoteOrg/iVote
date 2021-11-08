@@ -12,4 +12,20 @@
 }
 .skjlsdjgbsdjfbsdfv {
 	padding-left: 100px;
+	background-color: red;
+	padding-right: 100px;
+}
+.span_class {
+	color: transparent;
+}
+.searchbar {
+}
+.web-logo {
+	background-image: url(../images/logo.jpg);
+	height: 60px;
+	width: 62px;
+
+	margin-top: -10px;
+	margin-right: 20px;
+	background-size: cover;
 }

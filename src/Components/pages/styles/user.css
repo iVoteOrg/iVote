@@ -2,9 +2,16 @@
 	background-color: aqua;
 	height: 92vh;
 	padding: 20px;
-	background-image: url(../images/network.jpg);
+	/* background-image: url(../images/network.jpg); */
 	background-repeat: no-repeat;
 	background-size: cover;
+	background: rgb(112, 110, 156);
+	background: linear-gradient(
+		90deg,
+		rgba(112, 110, 156, 1) 0%,
+		rgba(162, 162, 245, 1) 56%,
+		rgba(11, 156, 186, 1) 100%
+	);
 }
 .inner {
 	height: 100%;

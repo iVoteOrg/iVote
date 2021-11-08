@@ -1,17 +1,13 @@
 .previous {
-	background-color: slateblue;
-	background-image: url(../images/network.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	/* padding-bottom: 50px; */
+	background: rgb(112, 110, 156);
+	background: linear-gradient(
+		90deg,
+		rgba(112, 110, 156, 1) 0%,
+		rgba(162, 162, 245, 1) 56%,
+		rgba(11, 156, 186, 1) 100%
+	);
 }
-.inn {
-	height: 100%;
-	border-radius: 80px;
-	padding: 20px;
-	text-align: center;
-	color: white;
-}
+
 .container-box {
 	display: flex;
 
@@ -23,8 +19,9 @@
 	flex-wrap: wrap;
 }
 .h1-heading {
-	color: red;
+	color: white;
 	text-align: center;
+	/* padding-left: 190px; */
 }
 @media screen and (min-width: 1051px) {
 	.previous {

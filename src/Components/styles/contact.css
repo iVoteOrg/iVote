@@ -17,7 +17,7 @@
 		rgba(11, 156, 186, 1) 100%
 	);
 	/* background: black; */
-	height: 100vh;
+	min-height: 100vh;
 	margin-bottom: -45px;
 }
 

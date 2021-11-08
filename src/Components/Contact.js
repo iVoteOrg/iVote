@@ -47,7 +47,7 @@ export default class Contact extends React.Component{
                       </div>
                   </div>
               </div>
-              {/* <Footer/> */}
+              <Footer/>
             </div>
           </div>
         )
