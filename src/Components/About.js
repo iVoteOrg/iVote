@@ -3,12 +3,15 @@ import "./styles/about.css";
 import Navbar from "./Navbar";
 import Footer from './Footer';
 import {Container, Row, Col} from 'react-bootstrap'
+import ParticleBackground from "./particle/Particle_Contact";
+
 
 export default class About extends React.Component{
     render(){
         return(
           <div id="about">
             <Navbar/>
+            <ParticleBackground />
             <div className="section">
               <Container>
                 <h1>About</h1>

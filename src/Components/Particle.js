@@ -12,7 +12,7 @@ export default class Particle extends React.Component{
                         <ParticleBackground />
                         <div id="text_div center_all">
                             <div className="center_all">
-                                <h1 className="sasdasdasd">Welcome to i-Vote</h1>
+                                <h1 className="sasdasdasd">Welcome to <br />I-Vote</h1>
                             </div>
                         </div>
                     </div>
