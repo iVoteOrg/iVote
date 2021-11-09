@@ -19,7 +19,7 @@ const Navbars = () =>{
                 <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/team">Team</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
-                <Button href="/user" className="ml-4">Sign-in</Button>
+                {/* <Button href="/user" className="ml-4">Sign-in</Button> */}
               </Nav>
             </Navbar.Collapse>
           </Container>

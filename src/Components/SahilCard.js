@@ -2,8 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
 import { Card, Button } from 'react-bootstrap';
-import { BsFacebook } from "react-icons/bs";
 import "./styles/team.css";
+import { BsFacebook } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 const Container = styled(animated.div)`
 cursor: pointer;
@@ -26,7 +28,7 @@ const SahilCard = () => {
                     <div className="content" >
                         <Card.Img className="imgBx" variant="top" src="../images/Sahil.jpg" />
                         <Card.Body className="contentBx">
-                          <Card.Title>Sahil Sharma (19CBS1050)</Card.Title>
+                          <Card.Title>Sahil Sharma </Card.Title>
                           <Card.Text>
                             Machine Learning
                           </Card.Text>
@@ -34,12 +36,12 @@ const SahilCard = () => {
                           <div className="d-flex  justify-content-center">
                             <div className="p-4">
                               <a href="http://facebook.com">
-                                <BsFacebook />
+                                <BsLinkedin />
                               </a>
                             </div>
                             <div className="p-4">
                               <a href="http://twittwe.com">
-                              <BsFacebook />
+                              <BsTwitter />
                               </a>
                             </div>
                             <div className="p-4">

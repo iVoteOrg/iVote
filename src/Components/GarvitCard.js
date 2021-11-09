@@ -30,7 +30,7 @@ const GarvitCard = () => {
                     <div className="content" >
                         <Card.Img className="imgBx" variant="top" src="./images/Garvit.jpg" />
                         <Card.Body className="contentBx">
-                          <Card.Title>Garvit Kumar (19CBS1059)</Card.Title>
+                          <Card.Title>Garvit Kumar </Card.Title>
                           <Card.Text>
                             Machine Learning
                           </Card.Text>

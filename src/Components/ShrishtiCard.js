@@ -4,6 +4,8 @@ import { useSpring, animated, config } from 'react-spring';
 import { Card, Button } from 'react-bootstrap';
 import { BsFacebook } from "react-icons/bs";
 import "./styles/team.css";
+import { BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 const Container = styled(animated.div)`
 cursor: pointer;
@@ -26,7 +28,7 @@ const ShrishtiCard = () => {
                     <div className="content">
                         <Card.Img className="imgBx" variant="top" src="../images/Shrishti.jpg" />
                         <Card.Body className="contentBx">
-                          <Card.Title>Shrishti Singh (19CBS1049)</Card.Title>
+                          <Card.Title>Shrishti Singh </Card.Title>
                           <Card.Text>
                             Machine Learning
                           </Card.Text>
@@ -34,12 +36,12 @@ const ShrishtiCard = () => {
                           <div className="d-flex  justify-content-center">
                             <div className="p-4">
                               <a href="http://facebook.com">
-                                <BsFacebook />
+                                <BsLinkedin />
                               </a>
                             </div>
                             <div className="p-4">
                               <a href="http://twittwe.com">
-                              <BsFacebook />
+                              <BsTwitter />
                               </a>
                             </div>
                             <div className="p-4">
