@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins: 300, 400, 500');
 
 #teams {
-	background-image: url(../images/sed.jpg);
-	background-repeat: repeat;
+	background: rgb(156,104,211);
+background: linear-gradient(171deg, rgba(156,104,211,1) 20%, rgba(71,180,173,1) 55%, rgba(142,177,218,1) 86%);
+	color: white;
 }
 
 .section {
@@ -10,7 +11,6 @@
 	justify-content: center; 
 	align-items: center; 
 	flex-wrap: wrap;  
-	min-height: 100vh;
 padding: 100px 0px !important;	
 
 }
@@ -27,14 +27,15 @@ margin: 40px 0;
 }
 
 .container .card {
-background: rgba(26, 13, 13, 0.2);
+background: rgba(23, 7, 43, 0.2) !important;
 
-box-shadow: 0 15px 35px rgba(148, 145, 145, 0.05);
+/* box-shadow: 0 15px 35px rgba(148, 145, 145, 0.05); */
 border-radius: 15px;
 display: flex;
 justify-content: center;
 align-items: center;
 backdrop-filter: blur(5px);
+background: repeat;
 }
 
 .container .card .content {
@@ -43,8 +44,8 @@ display: flex;
 justify-content: center; 
 align-items: center; 
 flex-direction: column; 
-opacity: 0.5; 
-transition: 0.5s;
+opacity: 0.6; 
+transition: 0.6s;
 color: white;
 }
 
@@ -56,8 +57,8 @@ color: white;
 	position: relative;
 	width: 150px;
 	height: 150px;
-	border-radius: 50%;
-	overflow: hidden;
+	border-radius: 90%;
+	/* overflow: hidden; */
 	border: 10px solid rgba(0,0,0,0.25);
 }
 
@@ -76,7 +77,8 @@ text-transform: uppercase;
 Letter-spacing: 2px;
 font-weight: 500;
 font-size: 18px;
-text-align: center; margin: 20px 0 1;
+text-align: center; 
+margin: 20px 0 1;
 }
 
 .row2 {

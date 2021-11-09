@@ -5,7 +5,14 @@ import Navbar from "./Navbar";
 import { Card } from 'react-bootstrap';
 import {Container, Row, Col} from 'react-bootstrap';
 import Footer from './Footer';
-import GlassCard from './glassCard';
+import GarvitCard from './GarvitCard';
+import ShrutiCard from './ShrutiCard';
+import SahilCard from './SahilCard';
+import ShrishtiCard from './ShrishtiCard';
+import HemantCard from './HemantCard';
+
+
+import ParticleBackground from "./particle/Particle_Contact";
 
 
 export default class Team extends React.Component{
@@ -13,24 +20,26 @@ export default class Team extends React.Component{
         return(
           <div id="teams">
             <Navbar />
+            <ParticleBackground />
+
             <div className="section">
               <Container>
                 <Row className="pt-5">
                   <Col>
                     <Card>
-                      <GlassCard />
+                      <GarvitCard />
                     </Card>
                   </Col>
 
                   <Col>
                     <Card>
-                      <GlassCard />
+                      <ShrutiCard />
                     </Card>
                   </Col>
 
                   <Col>
                     <Card>
-                      <GlassCard />
+                      <HemantCard />
                     </Card>
                   </Col>
                 </Row>
@@ -38,20 +47,20 @@ export default class Team extends React.Component{
                 <Row className="pt-5 row2">
                   <Col>
                     <Card>
-                      <GlassCard />
+                      <SahilCard />
                     </Card>
                   </Col>
 
                   <Col>
                     <Card>
-                      <GlassCard />
+                      <ShrishtiCard />
                     </Card>
                   </Col>
                 </Row>
 
               </Container>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
           </div>
         )
     }
