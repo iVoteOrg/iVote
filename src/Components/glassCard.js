@@ -12,7 +12,7 @@ cursor: pointer;
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1]
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
-const HemantCard = () => {
+const GlassCard = () => {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
     return (
         <Container
@@ -23,14 +23,14 @@ const HemantCard = () => {
             }}
         >
             <Card >
-                    <div className="content" >
-                        <Card.Img className="imgBx" variant="top" src="../images/Hemant.jpg" />
+                    <div className="content">
+                        <Card.Img className="imgBx" variant="top" src="https://images.unsplash.com/photo-1635424240719-f62cec4775cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" />
                         <Card.Body className="contentBx">
-                          <Card.Title>Hemant Bahl (19CBS1056)</Card.Title>
+                          <Card.Title>Card Title</Card.Title>
                           <Card.Text>
-                            Machine Learning
+                            Some quick example text
                           </Card.Text>
-                          {/* <Button variant="primary">Go somewhere</Button> */}
+                          <Button variant="primary">Go somewhere</Button>
                           <div className="d-flex  justify-content-center">
                             <div className="p-4">
                               <a href="http://facebook.com">
@@ -55,4 +55,4 @@ const HemantCard = () => {
     );
 }
 
-export default HemantCard;
+export default GlassCard;

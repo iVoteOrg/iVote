@@ -23,7 +23,7 @@ const SahilCard = () => {
             }}
         >
             <Card >
-                    <div className="content">
+                    <div className="content" >
                         <Card.Img className="imgBx" variant="top" src="../images/Sahil.jpg" />
                         <Card.Body className="contentBx">
                           <Card.Title>Sahil Sharma (19CBS1050)</Card.Title>

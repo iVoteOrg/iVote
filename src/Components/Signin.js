@@ -25,9 +25,6 @@ export default class Signin extends React.Component{
                                 <label className ="left-shigt">DOB</label>
                                 <input placeholder="Enter your DOB" type='date' name = "user_email" className ="form-control"/>
 
-                                <label className ="left-shigt">Password</label>
-                                <input placeholder="Enter your Password" type='password' name = "password" className ="form-control"/>
-
                                 <div className ="submit_btn_d">
                                   <input className ="submit_btn" type = "submit" value = 'Login' />
                                 </div>
@@ -37,7 +34,9 @@ export default class Signin extends React.Component{
                       </div>
                   </div>
               </div>
+              <div className ="footer_div">
               <Footer/>
+              </div>
               </div>
               </div>
         )

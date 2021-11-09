@@ -2,7 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
 import { Card, Button } from 'react-bootstrap';
+
 import { BsFacebook } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+
 import "./styles/team.css";
 
 const Container = styled(animated.div)`
@@ -23,28 +27,27 @@ const GarvitCard = () => {
             }}
         >
             <Card >
-                    <div className="content">
-                        <Card.Img className="imgBx" variant="top" src="../images/Garvit.jpg" />
+                    <div className="content" >
+                        <Card.Img className="imgBx" variant="top" src="./images/Garvit.jpg" />
                         <Card.Body className="contentBx">
                           <Card.Title>Garvit Kumar (19CBS1059)</Card.Title>
                           <Card.Text>
                             Machine Learning
                           </Card.Text>
-                          {/* <Button variant="primary">Go somewhere</Button> */}
                           <div className="d-flex  justify-content-center">
                             <div className="p-4">
                               <a href="http://facebook.com">
-                                <BsFacebook />
+                              <BsLinkedin />
                               </a>
                             </div>
                             <div className="p-4">
                               <a href="http://twittwe.com">
-                              <BsFacebook />
+                              <BsTwitter />
                               </a>
                             </div>
                             <div className="p-4">
                               <a href="http://facebook.com">
-                              <BsFacebook />
+                                <BsFacebook />
                               </a>
                             </div>
                           </div>

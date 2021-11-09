@@ -18,5 +18,5 @@ body,
 #root,
 .App {
 	/* background-color: black; */
-	min-height: 100vh;
+	height: 100vh;
 }
