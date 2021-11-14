@@ -2,7 +2,7 @@ import React from "react";
 import '../styles/navbar.css'
 import {Container, Navbar, Nav, Button} from 'react-bootstrap'
 
-const Navbars = () =>{
+const Navbars =()=>{
     return(
       <>
         <Navbar expand="lg" className="navbar-expand-sm bg-dark navbar-dark fixed-top skjlsdjgbsdjfbsdfv">

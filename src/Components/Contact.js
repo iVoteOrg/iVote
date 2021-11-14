@@ -5,8 +5,9 @@ import ParticleBackground from "./particle/Particle_Contact";
 import './styles/contact.css';
 import Footer from './Footer';
 
-export default class Contact extends React.Component{
-    render(){
+// export default class Contact extends React.Component{
+const Contact=()=>{
+// render(){
         function sendEmail(e) 
         {
           e.preventDefault();
@@ -51,5 +52,6 @@ export default class Contact extends React.Component{
             </div>
           </div>
         )
-    }
+    // }
 };
+export default Contact;

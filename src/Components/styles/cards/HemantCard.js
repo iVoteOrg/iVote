@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
 import { Card, Button } from 'react-bootstrap';
+
 import { BsFacebook } from "react-icons/bs";
-import "./styles/team.css";
 import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
-
+import Typical from 'react-typical'
+import "../team.css";
 const Container = styled(animated.div)`
 cursor: pointer;
 `;
@@ -14,7 +15,16 @@ cursor: pointer;
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1]
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
-const ShrutiCard = () => {
+const name = [
+  'Hemant Bahl',1000,
+];
+const designation = [
+  'Front -End',1000,
+  'Developer',1000
+  
+];
+
+const HemantCard = () => {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
     return (
         <Container
@@ -26,11 +36,13 @@ const ShrutiCard = () => {
         >
             <Card >
                     <div className="content">
-                        <Card.Img className="imgBx" variant="top" src="../images/Shruti.jpg" />
+                        <Card.Img className="imgBx imgBx4" variant="top" src="../images/Hemant.jpg" />
                         <Card.Body className="contentBx">
-                          <Card.Title>Shruti Jain </Card.Title>
+                          <Card.Title>
+                          <Typical wrapper="span" steps={name} loop={Infinity} className={'caca'} />  
+                          </Card.Title>
                           <Card.Text>
-                            Machine Learning
+                            <Typical wrapper="span" steps={designation} loop={Infinity} className={'caca'} /> 
                           </Card.Text>
                           {/* <Button variant="primary">Go somewhere</Button> */}
                           <div className="d-flex  justify-content-center">
@@ -57,4 +69,4 @@ const ShrutiCard = () => {
     );
 }
 
-export default ShrutiCard;
+export default HemantCard;

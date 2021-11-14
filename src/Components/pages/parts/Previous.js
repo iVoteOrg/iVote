@@ -2,8 +2,8 @@ import React from "react";
 import '../styles/previous.css'
 import '../styles/cardss.css'
 
-export default class About extends React.Component{
-    render(){
+// export default class About extends React.Component{
+const previous=()=>{
         return(
         <div className = "previous">
                 <h1 className ="h1-heading">Previous Election Winners</h1>
@@ -42,5 +42,5 @@ export default class About extends React.Component{
                 </div>
         </div>
         )
-    }
 };
+export default previous;

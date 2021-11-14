@@ -6,32 +6,32 @@ import { Card } from 'react-bootstrap';
 import {Container, Row, Col} from 'react-bootstrap';
 import Footer from './Footer';
 // import GlassCard from './glassCard';
-
-import GarvitCard from './GarvitCard';
-import ShrutiCard from './ShrutiCard';
-import SahilCard from './SahilCard';
-import ShrishtiCard from './ShrishtiCard';
-import HemantCard from './HemantCard';
-
-export default class Team extends React.Component{
-    render(){
+import GarvitCard from './styles/cards/GarvitCard';
+import ShrutiCard from './styles/cards/ShrutiCard';
+import SahilCard from './styles/cards/SahilCard';
+import ShrishtiCard from './styles/cards/ShrishtiCard';
+import HemantCard from './styles/cards/HemantCard';
+const Team=()=>{
+    // render(){
         return(
           <div id="teams">
             <Navbar />
             <div className="sectionasd">
               <Container>
+                <Row className="row1">
                   <Col>
                       <GarvitCard />
+                      
                   </Col>
-
+                  
                   <Col>
                       <ShrutiCard />
                   </Col>
-
                   <Col>
                       <SahilCard />
                   </Col>
-                
+                </Row>
+                <Row className="row2">
                   <Col>
                       <ShrishtiCard />
                   </Col>
@@ -39,12 +39,13 @@ export default class Team extends React.Component{
                   <Col>
                       <HemantCard />
                   </Col>
-               
+                </Row>
               </Container>
 
             </div>
-            {/* <Footer/> */}
+            <Footer/>
           </div>
         )
-    }
+    // }
 };
+export default Team;

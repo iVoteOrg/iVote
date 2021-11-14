@@ -1,8 +1,6 @@
 import React from "react";
-// import{} from './Navitemscss';
 import './styles/navbar.css'
 import {Container, Navbar, Nav, Button} from 'react-bootstrap'
-
 
 const Navbars = () =>{
     return(

@@ -5,14 +5,16 @@ import Footer from './Footer';
 import {Container, Row, Col} from 'react-bootstrap'
 import ParticleBackground from "./particle/Particle_Contact";
              
+// const HemantCard = () => 
 
-export default class About extends React.Component{
-    render(){
+// export default class About extends React.Component{
+const About=()=>{
+// render(){
         return(
-          <div id="about">
+          <div id="about" className ="about_1233">
             <Navbar/>
             <ParticleBackground />
-            <div className="section">
+            <div className="section23">
               <Container>
                 <h1>About</h1>
                 <Row>
@@ -29,8 +31,11 @@ export default class About extends React.Component{
                 </Row>
               </Container>
             </div>
-            <Footer/>
+            <div>
+              <Footer/>
+            </div>
           </div>
         )
-    }
+    // }
 };
+export default About;

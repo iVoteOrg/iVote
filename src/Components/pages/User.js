@@ -7,8 +7,8 @@ import Parties from './parts/Parties';
 
 import './styles/user.css'
 
-export default class About extends React.Component{
-    render(){
+const User=()=>{
+    // render(){
         return(
         <div>
             <Navi/>
@@ -17,5 +17,6 @@ export default class About extends React.Component{
             <Parties/>
         </div>
         )
-    }
+    // }
 };
+export default User;

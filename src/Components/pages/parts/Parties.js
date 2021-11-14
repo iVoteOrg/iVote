@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/parties.css'
-export default class About extends React.Component{
-    render(){
+const Parties=()=>{
+
         return(
         <div className = "parties">
             <h1 className ="h111">Present Running Elections</h1>
@@ -100,5 +100,5 @@ export default class About extends React.Component{
             </div>
         </div>
         )
-    }
 };
+export default Parties;
