@@ -5,6 +5,17 @@ import Footer from "./Footer";
 import ParticleBackground from "./particle/ParticleBackground";
 import "./styles/contact.css";
 import axios from "axios";
+import Typical from "react-typical";
+const steps = [
+  "We Concern Your Privacy 👌",
+  50,
+  "So that's why we build this platform ",
+  50,
+  "It's a 3 Factor Authentication System",
+  50,
+  "Each Vote Matters ❤️",
+  1000,
+];
 
 // export default class Signin extends React.Component{
 const Signin = ({ setAuthenticated }) => {
@@ -43,6 +54,21 @@ const Signin = ({ setAuthenticated }) => {
           <ParticleBackground />
           <div id="text_div center_all">
             <div className="center_all">
+            <div className="grid-container">
+              <div className="grid-item-1">
+                <h3 className="typical_upper">
+                <Typical
+                  wrapper="span"
+                  steps={steps}
+                  loop={Infinity}
+                  className={"caca"}
+                />
+              </h3>
+              </div>
+
+
+
+
               <div className="grid-item grid-item-2">
                 <form className=" form_format">
                   <div>
@@ -75,6 +101,7 @@ const Signin = ({ setAuthenticated }) => {
                     </div>
                   </div>
                 </form>
+              </div>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ import './styles/user.css'
 const User=()=>{
     // render(){
         return(
-        <div>
+        <div className="whole_page_container">
             <Navi/>
             <Procedure/>
             <Previous/>

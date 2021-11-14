@@ -12,3 +12,13 @@
 .skjlsdjgbsdjfbsdfv {
 	padding-left: 100px;
 }
+.web-logo2 {
+	background-image: url(../images/logo.jpg);
+	height: 65px;
+	width: 65px;
+
+	margin-top: -5px;
+	margin-right: 20px;
+	margin-bottom: -5px;
+	background-size: cover;
+}

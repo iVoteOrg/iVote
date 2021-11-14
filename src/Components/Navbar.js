@@ -7,6 +7,7 @@ const Navbars = () =>{
       <>
         <Navbar expand="lg" className="navbar-expand-sm fixed-top skjlsdjgbsdjfbsdfv">
           <Container className="justify-content-center">
+            <Nav.Link className ="web-logo2" href="/"></Nav.Link>
             <Navbar.Brand href="/">i-Vote</Navbar.Brand>
           </Container>
           

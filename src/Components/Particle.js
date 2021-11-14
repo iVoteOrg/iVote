@@ -9,14 +9,6 @@ const steps = [
   1000,
   "Welcome to iVote",
   1000,
-  "We Concern Your Privacy 👌",
-  1000,
-  "So that's why we build this platform ",
-  1000,
-  "It's a 3 Factor Authentication System",
-  1000,
-  "Each Vote Matters ♥",
-  1000,
 ];
 const Particle = ({ setAuthenticated }) => {
   // render(){
