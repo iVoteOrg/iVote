@@ -7,6 +7,8 @@ import Team from "./Components/Team";
 import Contact from "./Components/Contact";
 import User from "./Components/pages/User";
 import TwoFA from "./Components/TwoFA";
+import ThreeFA from "./Components/ThreeFA";
+
 import "./app.css";
 
 const App = () => {
@@ -35,6 +37,7 @@ const App = () => {
           <Route path="/team" exact component={Team} />
           <Route path="/user" exact component={User} />
           <Route path="/twoFA" exact component={twoFA} />
+          <Route path="/threeFA" exact component={ThreeFA} />
         </Switch>
       </Router>
     </>
