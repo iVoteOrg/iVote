@@ -12,7 +12,7 @@ const Faucet=()=>{
                       <div className="center_all">
                           <div>
                           <h1>
-                            Get Etherium To Caste Vote
+                            Get Ethereum To Caste Vote
                           </h1>
                         </div>
                         <div className="drop-btn-click buy-buton"/>
