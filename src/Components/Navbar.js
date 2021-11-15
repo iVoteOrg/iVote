@@ -1,6 +1,6 @@
 import React from "react";
 import './styles/navbar.css'
-import {Container, Navbar, Nav, Button} from 'react-bootstrap'
+import {Container, Navbar, Nav} from 'react-bootstrap'
 
 const Navbars = () =>{
     return(
@@ -18,7 +18,6 @@ const Navbars = () =>{
                 <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/team">Team</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
-                {/* <Button href="/user" className="ml-4">Sign-in</Button> */}
               </Nav>
             </Navbar.Collapse>
           </Container>

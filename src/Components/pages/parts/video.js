@@ -10,8 +10,8 @@ export default class About extends React.Component{
     }
     render() {
     const opts = {
-      height: '500',
-      width: '1000',
+      height: '400',
+      width: '800',
       playerVars: {
         autoplay: 0,
       },

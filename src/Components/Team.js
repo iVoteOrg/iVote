@@ -2,7 +2,6 @@ import React from "react";
 import "./styles/team.css";
 // import Card from "react-bootstrap/Card";
 import Navbar from "./Navbar";
-import { Card } from 'react-bootstrap';
 import {Container, Row, Col} from 'react-bootstrap';
 import Footer from './Footer';
 // import GlassCard from './glassCard';
