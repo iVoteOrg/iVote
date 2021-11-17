@@ -76,11 +76,12 @@ const Parties = ({ web3, addr, authenticated }) => {
 
   const proposals = parties.length
     ? parties.map((item, index) => {
+        let url = imgUrls[index];
         return (
           <div className="card_box">
             <div
               style={{
-                backgroundImage: `url(${imgUrls[index]})`,
+                backgroundImage: `url(${url})`,
               }}
               className="party-logo"
             />

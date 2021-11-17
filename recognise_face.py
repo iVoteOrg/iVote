@@ -1,16 +1,18 @@
+# code forked and tweaked from https://github.com/ageitgey/face_recognition/blob/master/examples/facerec_from_webcam_faster.py
+# to extend, just add more people into the known_people folder
+
 import face_recognition
 import cv2
 import numpy as np
 import os
 import glob
-import time
 
 
 def run_setup():
 
     # Get a reference to webcam #0 (the default one)
     video_capture = cv2.VideoCapture(0)
-
+    person = "Unknown"
     # make array of sample pictures with encodings
     known_face_encodings = []
     known_face_names = []
@@ -23,24 +25,25 @@ def run_setup():
     number_files = len(list_of_files)
 
     names = list_of_files.copy()
-
+    print(number_files)
     for i in range(number_files):
         globals()['image_{}'.format(i)] = face_recognition.load_image_file(
             list_of_files[i])
+        print(i)
         globals()['image_encoding_{}'.format(i)] = face_recognition.face_encodings(
             globals()['image_{}'.format(i)])[0]
         known_face_encodings.append(globals()['image_encoding_{}'.format(i)])
 
         # Create array of known names
         names[i] = names[i][56:-4]
-
         known_face_names.append(names[i])
+
     # Initialize some variables
     face_locations = []
     face_encodings = []
     face_names = []
     process_this_frame = True
-    starttime = time.time()
+
     while True:
         # Grab a single frame of video
         ret, frame = video_capture.read()
@@ -76,19 +79,11 @@ def run_setup():
                 best_match_index = np.argmin(face_distances)
                 if matches[best_match_index]:
                     name = known_face_names[best_match_index]
-                    # Release handle to the webcam
-                    video_capture.release()
-                    cv2.destroyAllWindows()
-                    return name
-
+                    person = name
                 face_names.append(name)
 
         process_this_frame = not process_this_frame
-        if time.time() - starttime > 59:
-            # Release handle to the webcam
-            video_capture.release()
-            cv2.destroyAllWindows()
-            return "Unknown"
+
         # Display the results
         for (top, right, bottom, left), name in zip(face_locations, face_names):
             # Scale back up face locations since the frame we detected in was scaled to 1/4 size
@@ -110,9 +105,11 @@ def run_setup():
         # Display the resulting image
         cv2.imshow('Video', frame)
 
-        # # Hit 'q' on the keyboard to quit!
-        # if cv2.waitKey(1) & 0xFF == ord('q'):
-        #     # Release handle to the webcam
-        #     video_capture.release()
-        #     cv2.destroyAllWindows()
-        #     return "Unknown"
+        # Hit 'q' on the keyboard to quit!
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+    # Release handle to the webcam
+    video_capture.release()
+    cv2.destroyAllWindows()
+    return person

@@ -2,7 +2,7 @@ import pyotp
 from flask import *
 from flask_cors import CORS, cross_origin
 import json
-from test1 import run_setup
+from recognise_face import run_setup
 
 file = open("./data.json")
 data = json.load(file)
