@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@pinata/sdk": "^1.1.23",
     "@truffle/hdwallet-provider": "^1.6.0",
     "truffle-plugin-verify": "^0.5.17"
   }

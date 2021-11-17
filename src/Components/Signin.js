@@ -18,7 +18,7 @@ const steps = [
 ];
 
 // export default class Signin extends React.Component{
-const Signin = ({ setAuthenticated }) => {
+const Signin = ({ setOneFAauth, setName }) => {
   const [id, setId] = useState("");
   const [dob, setDob] = useState("");
 
@@ -29,7 +29,10 @@ const Signin = ({ setAuthenticated }) => {
       .post("/api/login", { id: id, dob: dob })
       .then((response) => {
         if (response.data.authenticated === true) {
-          setAuthenticated(true);
+          setOneFAauth(true);
+          localStorage.setItem("oneFAauth", true);
+          setName(response.data.name);
+          localStorage.setItem("name", response.data.name);
           alert(response.data.message);
           redirect();
         } else {
@@ -43,7 +46,7 @@ const Signin = ({ setAuthenticated }) => {
   };
 
   const redirect = () => {
-    window.location = "http://localhost:3000/2FA";
+    window.location = "http://localhost:3000/twoFA";
   };
   // render(){
   return (
@@ -54,54 +57,51 @@ const Signin = ({ setAuthenticated }) => {
           <ParticleBackground />
           <div id="text_div center_all">
             <div className="center_all">
-            <div className="grid-container">
-              <div className="grid-item-1">
-                <h3 className="typical_upper">
-                <Typical
-                  wrapper="span"
-                  steps={steps}
-                  loop={Infinity}
-                  className={"caca"}
-                />
-              </h3>
-              </div>
-
-
-
-
-              <div className="grid-item grid-item-2">
-                <form className=" form_format">
-                  <div>
-                    <h3 style={{ textAlign: "center" }}>Log In</h3>
-                    <label className="left-shigt">ID</label>
-                    <input
-                      placeholder="Enter your ID"
-                      type="text"
-                      name="id"
-                      className="form-control"
-                      onChange={(event) => setId(event.target.value)}
+              <div className="grid-container">
+                <div className="grid-item-1">
+                  <h3 className="typical_upper">
+                    <Typical
+                      wrapper="span"
+                      steps={steps}
+                      loop={Infinity}
+                      className={"caca"}
                     />
+                  </h3>
+                </div>
 
-                    <label className="left-shigt">DOB</label>
-                    <input
-                      placeholder="Enter your DOB"
-                      type="date"
-                      name="user_email"
-                      className="form-control"
-                      onChange={(event) => setDob(event.target.value)}
-                    />
-
-                    <div className="submit_btn_d">
+                <div className="grid-item grid-item-2">
+                  <form className=" form_format">
+                    <div>
+                      <h3 style={{ textAlign: "center" }}>Log In</h3>
+                      <label className="left-shigt">ID</label>
                       <input
-                        className="submit_btn"
-                        type="submit"
-                        value="Login"
-                        onClick={login}
+                        placeholder="Enter your ID"
+                        type="text"
+                        name="id"
+                        className="form-control"
+                        onChange={(event) => setId(event.target.value)}
                       />
+
+                      <label className="left-shigt">DOB</label>
+                      <input
+                        placeholder="Enter your DOB"
+                        type="date"
+                        name="user_email"
+                        className="form-control"
+                        onChange={(event) => setDob(event.target.value)}
+                      />
+
+                      <div className="submit_btn_d">
+                        <input
+                          className="submit_btn"
+                          type="submit"
+                          value="Login"
+                          onClick={login}
+                        />
+                      </div>
                     </div>
-                  </div>
-                </form>
-              </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

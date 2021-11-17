@@ -349,6 +349,9 @@ contract iVote is Ownable{
    emit electionCreated(electionId, namesOfCandidates);   
 }
 
+function returnCandidatesForElection(uint256 _electionId) public view returns(string[] memory){
+    return idToElection[_electionId].namesOfCandidates;
+}
 function voteForCandidate(uint256 electionId, string memory candidate, bool panic) external isValidCandidate( electionId, candidate){
     require(block.timestamp < idToElection[electionId].startTime.add(idToElection[electionId].duration),"Election has ended" );
     require(hasVoted[electionId][msg.sender] == false," user has already voted");

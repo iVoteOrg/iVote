@@ -4,13 +4,8 @@ import ParticleBackground from "./particle/ParticleBackground";
 import Signinscroll from "./Signscroll";
 import Signin from "./Signin";
 import Typical from "react-typical";
-const steps = [
-  "Hello👋",
-  1000,
-  "Welcome to iVote",
-  1000,
-];
-const Particle = ({ setAuthenticated }) => {
+const steps = ["Hello👋", 1000, "Welcome to iVote", 1000];
+const Particle = ({ setOneFAauth, setName }) => {
   // render(){
   return (
     <div>
@@ -34,7 +29,7 @@ const Particle = ({ setAuthenticated }) => {
 
       <Signinscroll />
 
-      <Signin setAuthenticated={setAuthenticated} />
+      <Signin setOneFAauth={setOneFAauth} setName={setName} />
     </div>
   );
   // };
