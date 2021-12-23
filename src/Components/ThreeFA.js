@@ -8,6 +8,7 @@ const ThreeFA = ({ name, setAuthenticated, twoFAauth }) => {
     event.preventDefault();
     console.log(name);
     if (localStorage.getItem("twoFAauth")) {
+      console.log(localStorage.getItem("name"));
       axios
         .post("/api/recognise_face", { name: localStorage.getItem("name") })
         .then((response) => {

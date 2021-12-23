@@ -13,13 +13,13 @@
 }
 .card_box {
 	background-color: rgba(117, 204, 255, 0.219);
-	border: 5px black dotted;
-	border-style: double;
+	/* border: 5px black dotted;
+	border-style: double; */
 	border-radius: 75px;
-	height: 350px;
+	height: 400px;
 	width: 300px;
 	display: grid;
-	grid-template-rows: 80% 20%;
+	grid-template-rows: 75% 15% 10%;
 	margin-bottom: 20px;
 }
 

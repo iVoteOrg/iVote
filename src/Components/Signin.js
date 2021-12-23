@@ -30,6 +30,8 @@ const Signin = ({ setOneFAauth, setName }) => {
       .then((response) => {
         if (response.data.authenticated === true) {
           setOneFAauth(true);
+          console.log("hehehehehe");
+
           localStorage.setItem("oneFAauth", true);
           setName(response.data.name);
           localStorage.setItem("name", response.data.name);

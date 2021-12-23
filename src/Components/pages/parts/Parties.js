@@ -86,10 +86,6 @@ const Parties = ({ web3, addr, authenticated }) => {
               className="party-logo"
             />
 
-            <p>
-              Vote Count: <b>{voteCounts[index]}</b>
-            </p>
-
             <div className="party-name">
               <button
                 className="vote-btn"
@@ -108,6 +104,11 @@ const Parties = ({ web3, addr, authenticated }) => {
                 />
                 Threat
               </div>
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <p>
+                Vote Count: <b>{voteCounts[index]}</b>
+              </p>
             </div>
           </div>
         );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./particle/ParticleScreen.css";
 import ParticleBackground from "./particle/ParticleBackground";
 import Signinscroll from "./Signscroll";
@@ -7,6 +7,12 @@ import Typical from "react-typical";
 const steps = ["Hello👋", 1000, "Welcome to iVote", 1000];
 const Particle = ({ setOneFAauth, setName }) => {
   // render(){
+  useEffect(() => {
+    localStorage.setItem("oneFAauth", false);
+    localStorage.setItem("twoFAauth", false);
+    localStorage.setItem("authenticated", false);
+    localStorage.setItem("name", "");
+  }, []);
   return (
     <div>
       <div>
